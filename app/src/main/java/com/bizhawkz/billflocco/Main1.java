@@ -125,7 +125,7 @@ public class Main1 extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent It = new Intent(Main1.this, ResearchOption.class);
+                        Intent It = new Intent(Main1.this, OptionScreen.class);
                         startActivity(It);
                     }
                 });

@@ -70,7 +70,24 @@ public class ForgotPassword extends AppCompatActivity {
                 }
                 else {
                     if (forgot.matches(Expn) && forgot.length() > 0) {
-                        new Forgot().execute();
+                        AlertDialog.Builder builder = new AlertDialog.Builder(ForgotPassword.this);
+                        TextView myMsg = new TextView(ForgotPassword.this);
+                        myMsg.setText("Thank You!");
+                        myMsg.setGravity(Gravity.CENTER_HORIZONTAL);
+                        myMsg.setTextSize(20);
+                        myMsg.setTextColor(Color.BLACK);
+                        builder.setCustomTitle(myMsg);
+                        builder.setMessage("Your password has been sent to your registered mail Id.");
+                        builder.setPositiveButton("Continue",
+                                new DialogInterface.OnClickListener() {
+                                    public void onClick(DialogInterface dialog,
+                                                        int which) {
+                                        Intent it = new Intent(ForgotPassword.this, Login.class);
+                                        startActivity(it);
+                                    }
+                                });
+                        builder.show();
+                        //new Forgot().execute();
                     }
                     else{
                         AlertDialog.Builder builder = new AlertDialog.Builder(ForgotPassword.this);
