@@ -1,0 +1,102 @@
+package com.bizhawkz.billflocco;
+
+import android.content.Intent;
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class OptionScreen extends AppCompatActivity {
+    ImageView tv_about,tv_blog,tv_home,tv_research,tv_resource,tv_contact;
+    SessionManager1 session;
+    TextView tv1,tv2,tv3,tv4,tv5,tv6;
+     @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_option_screen);
+        tv_home = (ImageView) findViewById(R.id.i_home);
+        tv_about = (ImageView) findViewById(R.id.i_about);
+        tv_blog = (ImageView) findViewById(R.id.i_article);
+        tv_research = (ImageView) findViewById(R.id.i_research);
+        tv_resource = (ImageView) findViewById(R.id.i_Resource);
+        tv_contact = (ImageView) findViewById(R.id.i_contactUs);
+         tv1=(TextView)findViewById(R.id.tvHome);
+         tv2=(TextView)findViewById(R.id.tvAbout);
+         tv3=(TextView)findViewById(R.id.tvarticle);
+         tv4=(TextView)findViewById(R.id.tvReaserch);
+         tv5=(TextView)findViewById(R.id.tvResource);
+         tv6=(TextView)findViewById(R.id.tvcontact);
+         tv2.setText("About Us & Reflexology");
+         tv1.setText("Home");
+         tv3.setText("Articles/Blogs");
+         tv4.setText("Reflexology Research");
+         tv5.setText("Resource Link");
+         tv6.setText("Contact Us");
+
+         Typeface tf = Typeface.createFromAsset(this.getAssets(),
+                 "fonts2/GeosansLight.ttf");
+         tv1.setTypeface(tf);
+         tv2.setTypeface(tf);
+         tv3.setTypeface(tf);
+         tv4.setTypeface(tf);
+         tv5.setTypeface(tf);
+         tv6.setTypeface(tf);
+
+         tv2.setTextSize(16);
+         tv1.setTextSize(16);
+         tv3.setTextSize(16);
+         tv4.setTextSize(16);
+         tv5.setTextSize(16);
+         tv6.setTextSize(16);
+
+
+        session = new SessionManager1(getApplicationContext());
+        session.checkLogin();
+
+        tv_home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ti = new Intent(OptionScreen.this, Home.class);
+                startActivity(ti);
+            }
+        });
+        tv_about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ti = new Intent(OptionScreen.this, MainActivity.class);
+                startActivity(ti);
+            }
+        });
+        tv_blog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ti = new Intent(OptionScreen.this, Blog.class);
+                startActivity(ti);
+            }
+        });
+        tv_research.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ti = new Intent(OptionScreen.this, ResearchOption.class);
+                startActivity(ti);
+            }
+        });
+        tv_resource.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ti = new Intent(OptionScreen.this, ResourceOption.class);
+                startActivity(ti);
+            }
+        });
+        tv_contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent ti = new Intent(OptionScreen.this, Contactus.class);
+                startActivity(ti);
+            }
+        });
+    }
+}

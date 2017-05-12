@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context="com.bizhawkz.billflocco.ResearchOption">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Background"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_1"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="National Level Reflexology Organisation in the USA"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_2"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="State Level Reflexology Association in USA"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_3"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="International Reflexology Associations"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_4"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Reflexology Association in other Countries"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_5"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="School Affiliated with the Amarican Academy of Reflexology"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_6"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Organisation strongly Supportive of various Aspect of Natural Health"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_7"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Discover Highly Absorbable Liquid Nutrients for Better Health"/>
+
+    </LinearLayout>
+</RelativeLayout>

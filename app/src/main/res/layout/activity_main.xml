@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context="com.bizhawkz.billflocco.ResearchOption">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Background"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+
+        android:layout_centerInParent="true"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_1"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="About the American Academyof reflexology"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_2"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="Meet out Instructors"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_3"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="The American Academy of Reflexology is the First School to"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_4"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="What is Reflexology?Defination of Reflexology"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_5"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="Benifits of Reflexology,Stories,Reflexology Studies"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_6"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="Documented History of Foot,hand and Ear Reflexology"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_7"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="History of the Flocco Method-Integrating Foot and Ear Reflexology"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_8"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="7 Principle of Integrating Foot hand Ear reflexology"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_9"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="How does Reflexology Work"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_10"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="Difference Between Reflexology and Message"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_11"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="Difference Between Reflexology and Acupressure"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_12"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="Difference between Ear Reflexology and Auriculotherapy"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_13"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="I Understand you can Diagnose with Reflxology"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_14"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="Who Studies Reflexology?"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_15"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="Reflexology as a career"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="16dp"
+                android:id="@+id/btn_16"
+                android:background="@drawable/buttonbackground"
+                android:textColor="@color/White"
+                android:textAllCaps="false"
+                android:text="Reflexology continuing Education for many Professions"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

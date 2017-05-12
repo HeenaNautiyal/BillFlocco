@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bizhawkz.billflocco">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Contactus" />
+        <activity android:name=".Registration" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".OptionScreen" />
+        <activity android:name=".Resource" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Home" />
+        <activity android:name=".Blog" />
+        <activity android:name=".Research" />
+        <activity android:name=".ResearchOption" />
+        <activity android:name=".ReflexologyResearch" />
+        <activity android:name=".ReflexologyResearch2" />
+        <activity android:name=".ReflexologyResearch3" />
+        <activity android:name=".ReflexologyResearch4" />
+        <activity android:name=".ReflexologyResearch5" />
+        <activity android:name=".ReflexologyResearch6" />
+        <activity android:name=".ReflexologyResearch7" />
+        <activity android:name=".ReflexologyResearch8" />
+        <activity android:name=".ReflexologyResearch9" />
+        <activity android:name=".ReflexologyResearch10" />
+        <activity android:name=".ReflexologyResearch11" />
+        <activity android:name=".ReflexologyResearch12" />
+        <activity android:name=".ReflexologyResearch13" />
+        <activity android:name=".ReflexologyResearch14" />
+        <activity android:name=".ResourceOption" />
+        <activity android:name=".ReflexologyResource" />
+        <activity android:name=".ReflexologyResource2" />
+        <activity android:name=".ReflexologyResource3" />
+        <activity android:name=".ReflexologyResource4" />
+        <activity android:name=".ReflexologyResource5" />
+        <activity android:name=".ReflexologyResource6" />
+        <activity android:name=".ReflexologyResource7" />
+        <activity android:name=".AboutReflexology" />
+        <activity android:name=".AboutReflexology2" />
+        <activity android:name=".AboutReflexology3" />
+        <activity android:name=".AboutReflexology4" />
+        <activity android:name=".AboutReflexology5" />
+        <activity android:name=".AboutReflexology6" />
+        <activity android:name=".AboutReflexology7" />
+        <activity android:name=".AboutReflexology8" />
+        <activity android:name=".AboutReflexology9" />
+        <activity android:name=".AboutReflexology10" />
+        <activity android:name=".AboutReflexology11" />
+        <activity android:name=".AboutReflexology12" />
+        <activity android:name=".AboutReflexology13" />
+        <activity android:name=".AboutReflexology14" />
+        <activity android:name=".AboutReflexology15" />
+        <activity android:name=".AboutReflexology16"></activity>
+    </application>
+
+</manifest>

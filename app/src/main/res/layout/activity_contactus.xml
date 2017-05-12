@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context="com.bizhawkz.billflocco.Contactus">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/Background"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="115dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@color/White"
+        android:id="@+id/btn_call"
+        android:textSize="20dp"
+        android:text="Call Us: 818-841-7741"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonbackground"
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        android:layout_below="@+id/btn_call"
+        android:textAllCaps="false"
+        android:id="@+id/btn_mail"
+        android:text="Mail Us: aareflex@aol.com"/>
+    </LinearLayout>
+
+</RelativeLayout>

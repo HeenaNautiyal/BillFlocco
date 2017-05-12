@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        android:id="@+id/logoimage"
+        android:layout_gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp"
+            android:textSize="20dp"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="2017 Classes"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:text="Sponsor classes in your city"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="@drawable/buttonbackground"
+            android:layout_marginTop="4dp"
+            android:textSize="20dp"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Free eNewsLetters"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/buttonbackground"
+            android:layout_marginTop="4dp"
+            android:textSize="20dp"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Books &amp; Charts"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+<!--Ist Layout of the screen-->
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout1"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:orientation="vertical"
+            android:background="@color/dark"
+            android:layout_weight="1"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/home"
+                android:id="@+id/i_home"
+                android:layout_weight="0.50" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="2dp"
+                android:text="Home"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="108dp"
+            android:orientation="vertical"
+            android:background="@color/secondDark"
+            android:layout_weight="1"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/about_us___reflexology"
+                android:id="@+id/i_about"
+                android:layout_weight="0.50" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="2dp"
+                android:text="Home"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--        IiNd layout of screens-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout2"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:orientation="vertical"
+                android:background="@color/secondDark"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blog_icon"
+                    android:id="@+id/i_article"
+                    android:layout_weight="0.50" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:text="Home"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:orientation="vertical"
+                android:background="@color/dark"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/reflexology_research"
+                    android:id="@+id/i_research"
+                    android:layout_weight="0.50" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:text="Home"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout3"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:orientation="vertical"
+                android:background="@color/dark"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/resource"
+                    android:id="@+id/i_Resource"
+                    android:layout_weight="0.50" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:text="Home"/>
+            </LinearLayout>
+
+            <!--    IIIrd Layout of Screen-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="108dp"
+                android:orientation="vertical"
+                android:background="@color/secondDark"
+                android:layout_weight="1"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/contact"
+                    android:id="@+id/i_contactUs"
+                    android:layout_weight="0.50" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    android:layout_marginTop="4dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:text="Home"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    tools:context="com.bizhawkz.billflocco.ResearchOption">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Background"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff">
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+
+        android:layout_centerInParent="true"
+        android:id="@+id/scrollView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+         <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_1"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Reflexology Reaserch 380+Abstract from around the world"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_2"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="PMS Reflexology Research Study:Abstracts"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_3"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="PMS Reflexology Research Study:Full Study"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_4"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="PMS Reflexology Research Study:Chart of Results"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_5"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="PMS Reflexology Research Study:Psychological"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_6"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="PMS Reflexology Research Study: where mention"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_7"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Reflexology research A How to Book"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_8"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Why do Reflexology Research? 19 Reason"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_9"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Meaning of &quot;BLIND STUDY&quot;"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_10"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Meaning of &quot;RANDOMIZED STUDY&quot;"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_11"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Meaning of &quot;CONTROLLED STUDY&quot;"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_12"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Meaning of &quot;PEER REVIEW&quot;"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_13"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Sources of Statistical Help"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="16dp"
+            android:id="@+id/btn_14"
+            android:background="@drawable/buttonbackground"
+            android:textColor="@color/White"
+            android:textAllCaps="false"
+            android:text="Source of Research Funding"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
