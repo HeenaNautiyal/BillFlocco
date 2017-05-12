@@ -5,6 +5,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,10 +13,14 @@ public class OptionScreen extends AppCompatActivity {
     ImageView tv_about,tv_blog,tv_home,tv_research,tv_resource,tv_contact;
     SessionManager1 session;
     TextView tv1,tv2,tv3,tv4,tv5,tv6;
+    Button btn_1,btn_2,btn_3,btn_4;
      @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_option_screen);
+
+         session = new SessionManager1(getApplicationContext());
+         session.checkLogin();
         tv_home = (ImageView) findViewById(R.id.i_home);
         tv_about = (ImageView) findViewById(R.id.i_about);
         tv_blog = (ImageView) findViewById(R.id.i_article);
@@ -28,6 +33,12 @@ public class OptionScreen extends AppCompatActivity {
          tv4=(TextView)findViewById(R.id.tvReaserch);
          tv5=(TextView)findViewById(R.id.tvResource);
          tv6=(TextView)findViewById(R.id.tvcontact);
+
+         btn_1=(Button)findViewById(R.id.btn1);
+         btn_2=(Button)findViewById(R.id.btn2);
+
+         btn_4=(Button)findViewById(R.id.btn4);
+
          tv2.setText("About Us & Reflexology");
          tv1.setText("Home");
          tv3.setText("Articles/Blogs");
@@ -54,6 +65,29 @@ public class OptionScreen extends AppCompatActivity {
 
         session = new SessionManager1(getApplicationContext());
         session.checkLogin();
+
+         btn_1.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent ti = new Intent(OptionScreen.this, Main1.class);
+                 startActivity(ti);
+             }
+         });
+         btn_2.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent ti = new Intent(OptionScreen.this, Main2.class);
+                 startActivity(ti);
+             }
+         });
+
+         btn_4.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent ti = new Intent(OptionScreen.this, Main3.class);
+                 startActivity(ti);
+             }
+         });
 
         tv_home.setOnClickListener(new View.OnClickListener() {
             @Override

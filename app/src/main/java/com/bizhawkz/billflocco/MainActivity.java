@@ -9,9 +9,10 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
     Toolbar toolbar;
     Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt10,bt11,bt12,bt13,bt14,bt15,bt16;
+    SessionManager1 session;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         bt14=(Button)findViewById(R.id.btn_14);
         bt15=(Button)findViewById(R.id.btn_15);
         bt16=(Button)findViewById(R.id.btn_16);
+
 
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override

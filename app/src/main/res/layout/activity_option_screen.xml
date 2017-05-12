@@ -20,8 +20,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="6dp"
         android:orientation="vertical">
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="38dp"
@@ -29,6 +30,7 @@
             android:textSize="20dp"
             android:background="@drawable/buttonbackground"
             android:textColor="@color/White"
+            android:id="@+id/btn1"
             android:textAllCaps="false"
             android:text="2017 Classes"/>
         <Button
@@ -36,19 +38,12 @@
             android:layout_height="38dp"
             android:layout_marginTop="4dp"
             android:textSize="20dp"
+            android:id="@+id/btn2"
             android:textAllCaps="false"
             android:background="@drawable/buttonbackground"
             android:textColor="@color/White"
             android:text="Sponsor classes in your city"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:background="@drawable/buttonbackground"
-            android:layout_marginTop="4dp"
-            android:textSize="20dp"
-            android:textColor="@color/White"
-            android:textAllCaps="false"
-            android:text="Free eNewsLetters"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="35dp"
@@ -56,6 +51,7 @@
             android:layout_marginTop="4dp"
             android:textSize="20dp"
             android:textColor="@color/White"
+            android:id="@+id/btn4"
             android:textAllCaps="false"
             android:text="Books &amp; Charts"/>
     </LinearLayout>
@@ -64,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logoimage"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="6dp"
         android:layout_centerInParent="true"
         android:id="@+id/scrollView">
 
@@ -137,8 +133,7 @@
                     android:textStyle="bold"
                     android:gravity="center"
                     android:id="@+id/tvAbout"
-                    android:layout_marginBottom="2dp"
-                    android:text="About Bill"/>
+                    android:layout_marginBottom="2dp" />
             </LinearLayout>
 
         </LinearLayout>
@@ -243,8 +238,7 @@
                     android:textStyle="bold"
                     android:id="@+id/tvResource"
                     android:gravity="center"
-                    android:layout_marginBottom="2dp"
-                    android:text="Home"/>
+                    android:layout_marginBottom="2dp" />
             </LinearLayout>
 
             <!--    IIIrd Layout of Screen-->
@@ -274,8 +268,7 @@
                     android:textStyle="bold"
                     android:id="@+id/tvcontact"
                     android:gravity="center"
-                    android:layout_marginBottom="2dp"
-                    android:text="Home"/>
+                    android:layout_marginBottom="2dp" />
             </LinearLayout>
 
         </LinearLayout>
