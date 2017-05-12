@@ -52,6 +52,9 @@ public class ReflexologyResearch8 extends AppCompatActivity {
                         "document.getElementsByClassName('tag_line_con')[0].style.display='none'; })()");
                 webView.loadUrl("javascript:(function() { " +
                         "document.getElementsByClassName('footer_mid_con')[0].style.display='none'; })()");
+                webView.loadUrl("javascript:(function() { " +
+                        "document.getElementsByClassName('responsive-menu-button responsive-menu-boring\n" +
+                        "         responsive-menu-accessible')[0].style.display='none'; })()");
                 pb.dismiss();
                 mySwipeRefreshLayout.setRefreshing(false);
             }

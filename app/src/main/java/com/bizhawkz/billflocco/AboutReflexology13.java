@@ -122,7 +122,7 @@ public class AboutReflexology13 extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent It = new Intent(AboutReflexology13.this, ResearchOption.class);
+                        Intent It = new Intent(AboutReflexology13.this, MainActivity.class);
                         startActivity(It);
                     }
                 });
