@@ -35,7 +35,7 @@ public class Main3 extends AppCompatActivity {
         pb.setCancelable(false);
 
         webView.setWebViewClient(new MyWebViewClient());
-        url = "http://www.americanacademyofreflexology.com/sponsor-reflexology-classes-in-your-city/";
+        url = "http://www.americanacademyofreflexology.com/sales/bookschartsandhealthproducts/";
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -67,7 +67,7 @@ public class Main3 extends AppCompatActivity {
                 myMsg.setTextSize(20);
                 myMsg.setTextColor(Color.BLACK);
                 builder.setCustomTitle(myMsg);
-                builder.setMessage("Turn on mobile data or use Wi-Fi to access data.");
+                builder.setMessage("BOOKS CHARTS & HEALTH PRODUCTS");
                 builder.setPositiveButton("ok",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,
@@ -116,7 +116,7 @@ public class Main3 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("DISCOVER 29 REFLEXOLOGY WORKSHOPS FOR YOUR SCHOOL/ASSOCIATION");
+        toolbar.setTitle("BOOKS CHARTS & HEALTH PRODUCTS");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
