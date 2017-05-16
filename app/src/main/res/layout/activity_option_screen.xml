@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/Background">
     <LinearLayout
@@ -272,8 +273,13 @@
             </LinearLayout>
 
         </LinearLayout>
-
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/coordinatorlayout">
+        </android.support.design.widget.CoordinatorLayout>
     </LinearLayout>
 
     </ScrollView>
+
 </LinearLayout>

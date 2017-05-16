@@ -64,6 +64,7 @@ public class Registration extends AppCompatActivity {
                     ed_password.setError("You must have 6 characters in your password");
                     return;
                 }
+
                 age = ed_ageuser.getText().toString();
                 if (name.matches("") || lstname.matches("") || mail.matches("") ||
                         password.matches("") || age.matches("")) {
@@ -88,25 +89,9 @@ public class Registration extends AppCompatActivity {
                     if (mail.matches(Expn) && mail.length() > 0) {
                         Intent it = new Intent(Registration.this, Login.class);
                         startActivity(it);
-                            //new Register().execute();
-                    } else {
-                        AlertDialog.Builder builder = new AlertDialog.Builder(com.bizhawkz.billflocco.Registration.this);
-                        TextView myMsg = new TextView(com.bizhawkz.billflocco.Registration.this);
-                        myMsg.setText("Warning!");
-                        myMsg.setGravity(Gravity.CENTER_HORIZONTAL);
-                        myMsg.setTextSize(20);
-
-                        myMsg.setTextColor(Color.BLACK);
-                        builder.setCustomTitle(myMsg);
-                        builder.setMessage("Please enter a valid mail ID!");
-                        builder.setPositiveButton("OK",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog,
-                                                        int which) {
-                                        dialog.cancel();
-                                    }
-                                });
-                        builder.show();
+                    }else {
+                        ed_emailid.requestFocus();
+                        ed_emailid.setError("Please enter a valid mail ID!");
                     }
                 }
             }

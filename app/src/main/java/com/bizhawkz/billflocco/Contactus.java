@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.apache.http.client.HttpClient;
@@ -30,6 +31,8 @@ public class Contactus extends AppCompatActivity {
     String ed_mal,ed_sub,ed_message;
     Button btn1;
     ProgressDialog pb;
+    ImageView tvpower;
+    SessionManager1 session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +42,14 @@ public class Contactus extends AppCompatActivity {
         sub=(EditText)findViewById(R.id.ed_su);
         message=(EditText)findViewById(R.id.ed_message);
         btn1=(Button)findViewById(R.id.btn_Submit);
+        tvpower=(ImageView)findViewById(R.id.iv_log);
+        session = new SessionManager1(getApplicationContext());
+        tvpower.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                session.logoutUser();
+            }
+        });
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,7 +79,7 @@ public class Contactus extends AppCompatActivity {
                 else {
                    // new Contact().execute();
                 }
-                //Toast.makeText(getApplicationContext(),"Your Query has been send to admin",Toast.LENGTH_LONG).show();
+
             }
         });
 

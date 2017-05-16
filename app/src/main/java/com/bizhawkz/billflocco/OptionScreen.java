@@ -1,26 +1,39 @@
 package com.bizhawkz.billflocco;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class OptionScreen extends AppCompatActivity {
+public class OptionScreen extends AppCompatActivity implements ConnectivityReceiver.ConnectivityReceiverListener {
     ImageView tv_about,tv_blog,tv_home,tv_research,tv_resource,tv_contact;
     SessionManager1 session;
     TextView tv1,tv2,tv3,tv4,tv5,tv6;
     Button btn_1,btn_2,btn_3,btn_4;
+    private CoordinatorLayout coordinatorLayout;
      @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_option_screen);
+         coordinatorLayout = (CoordinatorLayout) findViewById(R.id
+                 .coordinatorlayout);
 
          session = new SessionManager1(getApplicationContext());
          session.checkLogin();
+
+         ConnectivityManager connManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+         NetworkInfo mWifi = connManager.getActiveNetworkInfo();
+         checkConnection();
+
         tv_home = (ImageView) findViewById(R.id.i_home);
         tv_about = (ImageView) findViewById(R.id.i_about);
         tv_blog = (ImageView) findViewById(R.id.i_article);
@@ -132,5 +145,27 @@ public class OptionScreen extends AppCompatActivity {
                 startActivity(ti);
             }
         });
+    }
+
+    private void checkConnection() {
+                   boolean isConnected = ConnectivityReceiver.isConnected();
+        showSnack(isConnected);
+    }
+
+    private void showSnack(boolean isConnected) {
+
+        Snackbar snackbar = Snackbar
+                .make(coordinatorLayout, "Sorry! Not connected to internet", Snackbar.LENGTH_LONG)
+                .setDuration(10000)
+                .setActionTextColor(getResources().getColor(R.color.RED));
+
+        View sbView = snackbar.getView();
+        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+        snackbar.show();
+    }
+
+    @Override
+    public void onNetworkConnectionChanged(boolean isConnected) {
+        showSnack(isConnected);
     }
 }

@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
     Toolbar toolbar;
     Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt10,bt11,bt12,bt13,bt14,bt15,bt16;
     SessionManager1 session;
@@ -17,7 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         initToolBar();
+
+
+
         bt1=(Button)findViewById(R.id.btn_1);
         bt2=(Button)findViewById(R.id.btn_2);
         bt3=(Button)findViewById(R.id.btn_3);

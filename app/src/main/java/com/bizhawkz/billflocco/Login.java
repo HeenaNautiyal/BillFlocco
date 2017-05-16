@@ -90,6 +90,8 @@ public class Login extends AppCompatActivity {
                         startActivity(it);
                       //  new Logmem().execute();
                         session.createLoginSession(mail1.replaceAll(" ", ""));
+                       // new Connect();
+
                     }
                     else{
                         AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
@@ -122,7 +124,6 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-
     private class Logmem  extends AsyncTask<String, String, String> {
         protected void onPreExecute() {
             super.onPreExecute();
