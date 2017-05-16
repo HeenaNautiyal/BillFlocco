@@ -82,31 +82,17 @@ public class ForgotPassword extends AppCompatActivity {
                                 new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog,
                                                         int which) {
+                                        //new Forgot().execute();
                                         Intent it = new Intent(ForgotPassword.this, Login.class);
                                         startActivity(it);
                                     }
                                 });
                         builder.show();
-                        //new Forgot().execute();
+
                     }
                     else{
-                        AlertDialog.Builder builder = new AlertDialog.Builder(ForgotPassword.this);
-                        TextView myMsg = new TextView(ForgotPassword.this);
-                        myMsg.setText("Warning!");
-                        myMsg.setGravity(Gravity.CENTER_HORIZONTAL);
-                        myMsg.setTextSize(20);
-
-                        myMsg.setTextColor(Color.BLACK);
-                        builder.setCustomTitle(myMsg);
-                        builder.setMessage("Please enter a valid mail ID!");
-                        builder.setPositiveButton("OK",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog,
-                                                        int which) {
-                                        dialog.cancel();
-                                    }
-                                });
-                        builder.show();
+                        edforgot.requestFocus();
+                        edforgot.setError("Please enter a valid mail ID!");
                     }
 
                 }

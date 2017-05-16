@@ -90,27 +90,9 @@ public class Login extends AppCompatActivity {
                         startActivity(it);
                       //  new Logmem().execute();
                         session.createLoginSession(mail1.replaceAll(" ", ""));
-                       // new Connect();
-
-                    }
-                    else{
-                        AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
-                        TextView myMsg = new TextView(Login.this);
-                        myMsg.setText("Warning!");
-                        myMsg.setGravity(Gravity.CENTER_HORIZONTAL);
-                        myMsg.setTextSize(20);
-
-                        myMsg.setTextColor(Color.BLACK);
-                        builder.setCustomTitle(myMsg);
-                        builder.setMessage("Please enter a valid mail ID!");
-                        builder.setPositiveButton("OK",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog,
-                                                        int which) {
-                                        dialog.cancel();
-                                    }
-                                });
-                        builder.show();
+                    }else {
+                        mail.requestFocus();
+                        mail.setError("Please enter a valid mail ID!");
                     }
                 }
             }
