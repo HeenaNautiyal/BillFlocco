@@ -37,6 +37,7 @@ public class Home extends AppCompatActivity {
         webView.setWebViewClient(new MyWebViewClient());
         url = "http://www.americanacademyofreflexology.com/";
         webView.getSettings().setJavaScriptEnabled(true);
+
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {

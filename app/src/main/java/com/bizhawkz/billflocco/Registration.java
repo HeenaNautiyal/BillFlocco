@@ -27,8 +27,8 @@ import org.json.JSONObject;
 import java.io.IOException;
 
 public class Registration extends AppCompatActivity {
-    EditText ed_firstname, ed_lastname, ed_emailid, ed_password, ed_ageuser;
-    String name, lstname, mail, password, age;
+    EditText ed_firstname, ed_lastname, ed_emailid, ed_password, ednumber;
+    String name, lstname, mail, password, number;
     Button btnRegi;
     int aging;
     ProgressDialog pb;
@@ -49,7 +49,7 @@ public class Registration extends AppCompatActivity {
         ed_lastname = (EditText) findViewById(R.id.ed_LastName);
         ed_emailid = (EditText) findViewById(R.id.ed_mail);
         ed_password = (EditText) findViewById(R.id.ed_password);
-        ed_ageuser = (EditText) findViewById(R.id.ed_number);
+        ednumber = (EditText) findViewById(R.id.ed_number);
 
         btnRegi = (Button) findViewById(R.id.btn_Submit);
         btnRegi.setOnClickListener(new View.OnClickListener() {
@@ -59,15 +59,14 @@ public class Registration extends AppCompatActivity {
                 lstname = ed_lastname.getText().toString();
                 mail = ed_emailid.getText().toString();
                 password = ed_password.getText().toString();
+                number=ednumber.getText().toString();
                 if (TextUtils.isEmpty(password) || password.length() < 4) {
                     ed_password.requestFocus();
                     ed_password.setError("You must have 6 characters in your password");
                     return;
                 }
-
-                age = ed_ageuser.getText().toString();
                 if (name.matches("") || lstname.matches("") || mail.matches("") ||
-                        password.matches("") || age.matches("")) {
+                        password.matches("") || number.matches("")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(com.bizhawkz.billflocco.Registration.this);
                     TextView myMsg = new TextView(com.bizhawkz.billflocco.Registration.this);
                     myMsg.setText("Warning!");
@@ -87,8 +86,8 @@ public class Registration extends AppCompatActivity {
                     builder.show();
                 } else {
                     if (mail.matches(Expn) && mail.length() > 0) {
-                        Intent it = new Intent(Registration.this, Login.class);
-                        startActivity(it);
+                        new Register().execute();
+
                     }else {
                         ed_emailid.requestFocus();
                         ed_emailid.setError("Please enter a valid mail ID!");
@@ -109,7 +108,7 @@ public class Registration extends AppCompatActivity {
             lstname = ed_lastname.getText().toString();
             mail = ed_emailid.getText().toString();
             password = ed_password.getText().toString();
-            age = ed_ageuser.getText().toString();
+            number = ednumber.getText().toString();
 
         }
 
@@ -117,9 +116,10 @@ public class Registration extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             HttpClient httpClient = new DefaultHttpClient();
 
-            String url1 = "http://outsourcingservicesusa.com/clients/katrina/insertdata.php?caseid=1&fname=" + name.replaceAll(" ", "") + "&lname=" + lstname.replaceAll(" ", "") + "" +
-                    "&email=" + mail.replaceAll(" ", "") + "&password=" + password.replaceAll(" ", "") + "" +
-                    "&age=" + age.replaceAll(" ", "") + "";
+            String url1 = "http://americanacademyofreflexology.com/App_mObile/insertdata.php?" +
+                    "caseid=1&fname="+name.replaceAll(" ","")+"&lname="+lstname.replaceAll(" ","")+"" +
+                    "&email="+mail.replaceAll(" ","")+"&password="+password.replaceAll(" ","")+"" +
+                    "&mobileno="+number.replaceAll(" ","")+"";
 
             String SetServerString = "";
             HttpGet httpget = new HttpGet(url1);
@@ -157,7 +157,7 @@ public class Registration extends AppCompatActivity {
                                     ed_lastname.setText("");
                                     ed_emailid.setText("");
                                     ed_password.setText("");
-                                    ed_ageuser.setText("");
+                                    ednumber.setText("");
                                     Intent it = new Intent(Registration.this, Login.class);
                                     startActivity(it);
                                 }

@@ -55,7 +55,6 @@ public class ForgotPassword extends AppCompatActivity {
                     myMsg.setText("Warning!");
                     myMsg.setGravity(Gravity.CENTER_HORIZONTAL);
                     myMsg.setTextSize(20);
-
                     myMsg.setTextColor(Color.BLACK);
                     builder.setCustomTitle(myMsg);
                     builder.setMessage("All fields are mandatory.");
@@ -113,7 +112,7 @@ public class ForgotPassword extends AppCompatActivity {
         @Override
         protected String doInBackground(String... params) {
             HttpClient httpClient = new DefaultHttpClient();
-            String url = "http://outsourcingservicesusa.com/clients/katrina/insertdata.php?caseid=3&email="+forgot.replaceAll(" ","")+"";
+            String url ="http://americanacademyofreflexology.com/App_mObile/insertdata.php?caseid=3&email="+forgot.replaceAll(" ","")+"";
             String SetServerString = "";
             HttpGet httpget = new HttpGet(url);
             ResponseHandler<String> responseHandler = new BasicResponseHandler();

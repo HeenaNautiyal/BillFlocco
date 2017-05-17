@@ -77,7 +77,7 @@ public class Contactus extends AppCompatActivity {
                     builder.show();
                 }
                 else {
-                   // new Contact().execute();
+                    new Contact().execute();
                 }
 
             }
@@ -101,7 +101,9 @@ public class Contactus extends AppCompatActivity {
         @Override
         protected String doInBackground(String... urls) {
             HttpClient httpClient = new DefaultHttpClient();
-            String url = "http://outsourcingservicesusa.com/clients/katrina/insertdata.php?caseid=4&name="+ed_sub.replaceAll(" ","%20")+"&email="+ed_mal.replaceAll(" ","")+"&message="+ed_message.replaceAll(" ","%20")+"";
+            String url ="http://americanacademyofreflexology.com/App_mObile/insertdata.php?caseid=4" +
+                    "&email="+ed_mal.replaceAll(" ","")+"&subject="+ed_mal.replaceAll(" ","")+"" +
+                    "&message="+ed_message.replaceAll(" ","")+"";
             String SetServerString = "";
             HttpGet httpget = new HttpGet(url);
             ResponseHandler<String> responseHandler = new BasicResponseHandler();

@@ -86,10 +86,8 @@ public class Login extends AppCompatActivity {
                 }
                 else {
                     if (mail1.matches(Expn) && mail1.length() > 0) {
-                        Intent it = new Intent(Login.this, OptionScreen.class);
-                        startActivity(it);
-                      //  new Logmem().execute();
                         session.createLoginSession(mail1.replaceAll(" ", ""));
+                        new Logmem().execute();
                     }else {
                         mail.requestFocus();
                         mail.setError("Please enter a valid mail ID!");
@@ -118,7 +116,8 @@ public class Login extends AppCompatActivity {
         @Override
         protected String doInBackground(String... urls) {
             HttpClient httpClient = new DefaultHttpClient();
-            String url = "http://outsourcingservicesusa.com/clients/katrina/insertdata.php?caseid=2&email="+mail1.replaceAll(" ","")+"&password="+pass1.replaceAll(" ","")+"";
+            String url ="http://americanacademyofreflexology.com/App_mObile/insertdata.php?" +
+                    "caseid=2&email="+mail1.replaceAll(" ","")+"&password="+pass1.replaceAll(" ","")+"";
             String SetServerString = "";
             HttpGet httpget = new HttpGet(url);
             ResponseHandler<String> responseHandler = new BasicResponseHandler();
