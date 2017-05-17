@@ -6,9 +6,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -60,7 +59,7 @@ public class Registration extends AppCompatActivity {
                 mail = ed_emailid.getText().toString();
                 password = ed_password.getText().toString();
                 number=ednumber.getText().toString();
-                if (TextUtils.isEmpty(password) || password.length() < 4) {
+                if (password.length() < 4) {
                     ed_password.requestFocus();
                     ed_password.setError("You must have 6 characters in your password");
                     return;
@@ -87,7 +86,8 @@ public class Registration extends AppCompatActivity {
                 } else {
                     if (mail.matches(Expn) && mail.length() > 0) {
                         new Register().execute();
-
+                        Intent it = new Intent(Registration.this, Login.class);
+                        startActivity(it);
                     }else {
                         ed_emailid.requestFocus();
                         ed_emailid.setError("Please enter a valid mail ID!");

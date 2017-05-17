@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -20,6 +21,7 @@ public class OptionScreen extends AppCompatActivity implements ConnectivityRecei
     SessionManager1 session;
     TextView tv1,tv2,tv3,tv4,tv5,tv6;
     Button btn_1,btn_2,btn_3,btn_4;
+    Toolbar toolbar;
     private CoordinatorLayout coordinatorLayout;
      @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class OptionScreen extends AppCompatActivity implements ConnectivityRecei
 
          session = new SessionManager1(getApplicationContext());
          session.checkLogin();
+
 
          ConnectivityManager connManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
          NetworkInfo mWifi = connManager.getActiveNetworkInfo();

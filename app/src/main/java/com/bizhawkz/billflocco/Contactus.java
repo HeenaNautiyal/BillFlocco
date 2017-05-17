@@ -43,11 +43,37 @@ public class Contactus extends AppCompatActivity {
         message=(EditText)findViewById(R.id.ed_message);
         btn1=(Button)findViewById(R.id.btn_Submit);
         tvpower=(ImageView)findViewById(R.id.iv_log);
+
+
         session = new SessionManager1(getApplicationContext());
         tvpower.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                session.logoutUser();
+                android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(Contactus.this);
+                TextView myMsg = new TextView(Contactus.this);
+                myMsg.setText("Logout!");
+                myMsg.setGravity(Gravity.CENTER_HORIZONTAL);
+                myMsg.setTextSize(20);
+
+                myMsg.setTextColor(Color.BLACK);
+                builder.setCustomTitle(myMsg);
+                builder.setMessage("Do you want to logout?");
+                builder.setPositiveButton("Yes,Logout",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int which) {
+                               session.logoutUser();
+                                Intent intent = new Intent(Contactus.this, Login.class);
+                                startActivity(intent);
+                                finish();
+                            }
+                        });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,
+                                        int which) {
+                    }
+                });
+                builder.show();
             }
         });
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -138,13 +164,11 @@ public class Contactus extends AppCompatActivity {
                                                     int which) {
                                     mail.setText("");
                                     sub.setText("");
-
                                     Intent it = new Intent(Contactus.this, OptionScreen.class);
                                     startActivity(it);
                                 }
                             });
                     builder.show();
-
                 }
             } catch (JSONException e) {
                 e.printStackTrace();
