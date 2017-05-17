@@ -5,9 +5,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
@@ -28,6 +28,7 @@ public class AboutReflexology extends AppCompatActivity {
         mySwipeRefreshLayout = (SwipeRefreshLayout) this.findViewById(R.id.swipeContainer);
         webView = (WebView) findViewById(R.id.web1);
         initToolBar();
+
 
         pb = new ProgressDialog(AboutReflexology.this);
         pb.setMessage("Please wait while Loading...");
@@ -52,6 +53,9 @@ public class AboutReflexology extends AppCompatActivity {
                         "document.getElementsByClassName('tag_line_con')[0].style.display='none'; })()");
                 webView.loadUrl("javascript:(function() { " +
                         "document.getElementsByClassName('footer_mid_con')[0].style.display='none'; })()");
+                webView.loadUrl("javascript:(function() { " +
+                        "document.getElementsByClassName('responsive-menu-button responsive-menu-boring\n" +
+                        "         responsive-menu-accessible')[0].style.display='none'; })()");
                 pb.dismiss();
                 mySwipeRefreshLayout.setRefreshing(false);
             }

@@ -2,6 +2,7 @@ package com.bizhawkz.billflocco;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -153,15 +154,21 @@ public class OptionScreen extends AppCompatActivity implements ConnectivityRecei
     }
 
     private void showSnack(boolean isConnected) {
+        String message;
+        int color;
+        if (!isConnected) {
+            message = "Sorry! Not connected to internet";
+            color = Color.WHITE;
+            Snackbar snackbar = Snackbar
+                    .make(coordinatorLayout, message, Snackbar.LENGTH_LONG)
+                    .setDuration(10000);
 
-        Snackbar snackbar = Snackbar
-                .make(coordinatorLayout, "Sorry! Not connected to internet", Snackbar.LENGTH_LONG)
-                .setDuration(10000)
-                .setActionTextColor(getResources().getColor(R.color.RED));
+            View sbView = snackbar.getView();
+            TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
+            textView.setTextColor(color);
+            snackbar.show();
+        }
 
-        View sbView = snackbar.getView();
-        TextView textView = (TextView) sbView.findViewById(android.support.design.R.id.snackbar_text);
-        snackbar.show();
     }
 
     @Override
