@@ -116,7 +116,7 @@ public class AboutReflexology13 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("I UNDERSTAND YOU CAN DIAGNOSE WITH REFLEXOLOGY");
+        toolbar.setTitle("I Understand you can diagnose with Reflexology YOU CAN DIAGNOSE WITH REFLEXOLOGY");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

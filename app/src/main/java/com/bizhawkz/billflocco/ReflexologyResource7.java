@@ -35,7 +35,7 @@ public class ReflexologyResource7 extends AppCompatActivity {
         pb.setCancelable(false);
 
         webView.setWebViewClient(new MyWebViewClient());
-        url = "http://www.reflexologyresearch.net/Research380ReflexologyResearchAbstracts.shtml";
+        url = "http://www.americanacademyofreflexology.com/discover-highly-absorbable-liquid-nutrients-for-better-health/";
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -121,7 +121,7 @@ public class ReflexologyResource7 extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent It = new Intent(ReflexologyResource7.this, OptionScreen.class);
+                        Intent It = new Intent(ReflexologyResource7.this, ResourceOption.class);
                         startActivity(It);
                     }
                 });

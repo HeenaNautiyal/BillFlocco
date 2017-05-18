@@ -25,7 +25,7 @@ public class ReflexologyResearch4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reflexology_research4);
-        mySwipeRefreshLayout = (SwipeRefreshLayout) this.findViewById(R.id.swipeContainer);
+       // mySwipeRefreshLayout = (SwipeRefreshLayout) this.findViewById(R.id.swipeContainer);
         webView = (WebView) findViewById(R.id.web1);
         initToolBar();
 
@@ -56,7 +56,7 @@ public class ReflexologyResearch4 extends AppCompatActivity {
                         "document.getElementsByClassName('responsive-menu-button responsive-menu-boring\n" +
                         "         responsive-menu-accessible')[0].style.display='none'; })()");
                 pb.dismiss();
-                mySwipeRefreshLayout.setRefreshing(false);
+               // mySwipeRefreshLayout.setRefreshing(false);
             }
 
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
@@ -86,7 +86,7 @@ public class ReflexologyResearch4 extends AppCompatActivity {
             }
         });
         webView.loadUrl(url);
-        mySwipeRefreshLayout.setOnRefreshListener(
+       /* mySwipeRefreshLayout.setOnRefreshListener(
                 new SwipeRefreshLayout.OnRefreshListener() {
                     @Override
                     public void onRefresh() {
@@ -97,7 +97,7 @@ public class ReflexologyResearch4 extends AppCompatActivity {
                         webView.reload();
                     }
                 }
-        );
+        );*/
     }
 
     private class MyWebViewClient extends WebViewClient {

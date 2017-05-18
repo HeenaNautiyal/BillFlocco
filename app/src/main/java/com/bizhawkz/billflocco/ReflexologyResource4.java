@@ -35,7 +35,7 @@ public class ReflexologyResource4 extends AppCompatActivity {
         pb.setCancelable(false);
 
         webView.setWebViewClient(new MyWebViewClient());
-        url = "http://www.reflexologyresearch.net/Research380ReflexologyResearchAbstracts.shtml";
+        url = "http://www.americanacademyofreflexology.com/reflexology-associations-in-other-countries/";
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -112,7 +112,7 @@ public class ReflexologyResource4 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Reflexology Research Studies Listed by Category");
+        toolbar.setTitle("Reflexology Associations in other Countries");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
@@ -121,7 +121,7 @@ public class ReflexologyResource4 extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent It = new Intent(ReflexologyResource4.this, OptionScreen.class);
+                        Intent It = new Intent(ReflexologyResource4.this, ResourceOption.class);
                         startActivity(It);
                     }
                 });

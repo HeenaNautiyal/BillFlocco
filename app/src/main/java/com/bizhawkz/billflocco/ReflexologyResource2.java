@@ -35,7 +35,7 @@ public class ReflexologyResource2 extends AppCompatActivity {
         pb.setCancelable(false);
 
         webView.setWebViewClient(new MyWebViewClient());
-        url = "http://www.reflexologyresearch.net/Research380ReflexologyResearchAbstracts.shtml";
+        url = "http://www.americanacademyofreflexology.com/state-level-reflexology-associations-in-usa/";
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -112,7 +112,7 @@ public class ReflexologyResource2 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("State Level Reflexology Association in USA");
+        toolbar.setTitle("State level Reflexology Associations in USA");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
@@ -121,7 +121,7 @@ public class ReflexologyResource2 extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent It = new Intent(ReflexologyResource2.this, OptionScreen.class);
+                        Intent It = new Intent(ReflexologyResource2.this, ResourceOption.class);
                         startActivity(It);
                     }
                 });

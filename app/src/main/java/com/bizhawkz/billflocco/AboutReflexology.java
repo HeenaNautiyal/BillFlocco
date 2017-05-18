@@ -117,7 +117,7 @@ public class AboutReflexology extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("AMERICAN ACADEMY OF REFLEXOLOGY");
+        toolbar.setTitle("American Acadamy of Reflexology");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

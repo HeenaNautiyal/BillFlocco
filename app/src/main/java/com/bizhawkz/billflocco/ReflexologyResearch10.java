@@ -116,7 +116,7 @@ public class ReflexologyResearch10 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Meaning of &quot;RANDOMIZED STUDY&quot;");
+        toolbar.setTitle("Meaning of RANDOMIZED STUDY");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

@@ -21,12 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Contactus" />
-        <activity android:name=".Registration" />
-        <activity android:name=".ForgotPassword" />
+        <activity android:name=".Contactus"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Registration"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".ForgotPassword"
+            android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".Resource" />
-        <activity android:name=".Login" />
+        <activity android:name=".Login"
+            android:windowSoftInputMode="stateHidden"/>
         <activity android:name=".Blog" />
         <activity android:name=".Research" />
         <activity android:name=".ResearchOption" />

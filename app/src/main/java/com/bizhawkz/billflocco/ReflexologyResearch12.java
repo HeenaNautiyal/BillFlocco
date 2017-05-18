@@ -35,7 +35,7 @@ public class ReflexologyResearch12 extends AppCompatActivity {
         pb.setCancelable(false);
 
         webView.setWebViewClient(new MyWebViewClient());
-        url = "http://www.americanacademyofreflexology.com/meaning-of-controlled-study/#more-1113";
+        url = "http://www.americanacademyofreflexology.com/meaning-of-peer-review/#more-1114";
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -117,7 +117,7 @@ public class ReflexologyResearch12 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Meaning of &quot;PEER REVIEW&quot;");
+        toolbar.setTitle("Meaning of PEER REVIEW");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

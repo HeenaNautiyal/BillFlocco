@@ -79,7 +79,7 @@ public class ResourceOption extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("REFLEXOLOGY RESEARCH");
+        toolbar.setTitle("RESOURCE LINKS");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

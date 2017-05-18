@@ -35,7 +35,7 @@ public class ReflexologyResource6 extends AppCompatActivity {
         pb.setCancelable(false);
 
         webView.setWebViewClient(new MyWebViewClient());
-        url = "http://www.reflexologyresearch.net/Research380ReflexologyResearchAbstracts.shtml";
+        url = "http://www.americanacademyofreflexology.com/organizations-strongly-supportive-of-various-aspects-of-natural-health/";
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -112,7 +112,7 @@ public class ReflexologyResource6 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Organisations Strongly Supportive");
+        toolbar.setTitle("Organisation Strongly Supportive");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
@@ -121,7 +121,7 @@ public class ReflexologyResource6 extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent It = new Intent(ReflexologyResource6.this, OptionScreen.class);
+                        Intent It = new Intent(ReflexologyResource6.this, ResourceOption.class);
                         startActivity(It);
                     }
                 });

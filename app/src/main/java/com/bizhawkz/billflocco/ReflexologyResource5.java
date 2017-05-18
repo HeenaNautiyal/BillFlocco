@@ -35,7 +35,7 @@ public class ReflexologyResource5 extends AppCompatActivity {
         pb.setCancelable(false);
 
         webView.setWebViewClient(new MyWebViewClient());
-        url = "http://www.reflexologyresearch.net/Research380ReflexologyResearchAbstracts.shtml";
+        url = "http://www.americanacademyofreflexology.com/schools-affiliated-with-the-american-academy-of-reflexology/";
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -112,7 +112,7 @@ public class ReflexologyResource5 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Schools Affilated with the American Acadamy of Reflexology");
+        toolbar.setTitle("School Affilated with the American Academy of Reflexology");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
@@ -121,7 +121,7 @@ public class ReflexologyResource5 extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent It = new Intent(ReflexologyResource5.this, OptionScreen.class);
+                        Intent It = new Intent(ReflexologyResource5.this, ResourceOption.class);
                         startActivity(It);
                     }
                 });

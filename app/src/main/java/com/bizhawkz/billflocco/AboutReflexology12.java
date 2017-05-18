@@ -116,7 +116,7 @@ public class AboutReflexology12 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("DIFFERENCE BETWEEN EAR REFLEXOLOGY AND AURICULOTHERAPY");
+        toolbar.setTitle("Difference between Ear Reflexology and Auriculotherapy");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

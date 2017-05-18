@@ -17,7 +17,7 @@ public class SplashActivity extends AppCompatActivity {
         tv=(TextView)findViewById(R.id.tv_splash);
         Typeface tf = Typeface.createFromAsset(this.getAssets(),
                 "fonts2/GeosansLight.ttf");
-        tv.setText("THE AMERICAN \n ACADAMY OF \n REFLEXOLOGY");
+        tv.setText("THE AMERICAN \n ACADEMY OF \n REFLEXOLOGY");
         tv.setTextSize(25);
         tv.setTypeface(tf);
         new Handler().postDelayed(new Runnable() {

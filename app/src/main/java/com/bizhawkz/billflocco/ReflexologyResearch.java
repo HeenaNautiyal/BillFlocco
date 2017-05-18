@@ -5,9 +5,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
@@ -20,12 +19,12 @@ public class ReflexologyResearch extends AppCompatActivity {
     WebView webView;
     ProgressDialog pb;
     String url;
-    SwipeRefreshLayout mySwipeRefreshLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reflexology_research);
-        mySwipeRefreshLayout = (SwipeRefreshLayout) this.findViewById(R.id.swipeContainer);
+
         webView = (WebView) findViewById(R.id.web1);
         initToolBar();
 
@@ -56,7 +55,7 @@ public class ReflexologyResearch extends AppCompatActivity {
                         "document.getElementsByClassName('responsive-menu-button responsive-menu-boring\n" +
                         "         responsive-menu-accessible')[0].style.display='none'; })()");
                 pb.dismiss();
-                mySwipeRefreshLayout.setRefreshing(false);
+
             }
 
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
@@ -86,7 +85,7 @@ public class ReflexologyResearch extends AppCompatActivity {
             }
         });
         webView.loadUrl(url);
-        mySwipeRefreshLayout.setOnRefreshListener(
+       /* mySwipeRefreshLayout.setOnRefreshListener(
                 new SwipeRefreshLayout.OnRefreshListener() {
                     @Override
                     public void onRefresh() {
@@ -97,7 +96,7 @@ public class ReflexologyResearch extends AppCompatActivity {
                         webView.reload();
                     }
                 }
-        );
+        );*/
     }
 
     private class MyWebViewClient extends WebViewClient {

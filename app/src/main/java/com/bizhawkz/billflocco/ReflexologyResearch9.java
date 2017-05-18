@@ -116,7 +116,7 @@ public class ReflexologyResearch9 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Meaning of &quot;BLIND STUDY&quot;");
+        toolbar.setTitle("Meaning of BLIND STUDY");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

@@ -116,7 +116,7 @@ public class AboutReflexology7 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("HISTORY OF THE FLOCCO METHOD -INTEGRATING FOOT AND EAR REFLEXOLOGY");
+        toolbar.setTitle("History of Flocco Method");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

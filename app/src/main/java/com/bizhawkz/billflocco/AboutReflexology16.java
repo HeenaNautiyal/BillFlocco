@@ -116,7 +116,7 @@ public class AboutReflexology16 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("REFLEXOLOGY CONTINUING EDUCATION FOR MANY PROFESSIONS");
+        toolbar.setTitle("Reflexology continue Education for many Professions");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

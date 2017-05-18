@@ -35,7 +35,7 @@ public class AboutReflexology8 extends AppCompatActivity {
         pb.setCancelable(false);
 
         webView.setWebViewClient(new MyWebViewClient());
-        url = "http://www.americanacademyofreflexology.com/about-the-american-academy-of-reflexology/";
+        url ="http://www.americanacademyofreflexology.com/7-principles-of-integrating-foot-hand-ear-reflexology/";
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -116,7 +116,7 @@ public class AboutReflexology8 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("AMERICAN ACADEMY OF REFLEXOLOGY");
+        toolbar.setTitle("7 Principles of Integrating Foot Hand ear reflexology");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

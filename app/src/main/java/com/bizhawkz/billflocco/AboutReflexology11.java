@@ -116,7 +116,7 @@ public class AboutReflexology11 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("DIFFERENCE BETWEEN REFLEXOLOGY AND ACUPRESSURE");
+        toolbar.setTitle("Difference between Reflexology and acupressure");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

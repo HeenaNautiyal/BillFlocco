@@ -86,8 +86,6 @@ public class Registration extends AppCompatActivity {
                 } else {
                     if (mail.matches(Expn) && mail.length() > 0) {
                         new Register().execute();
-                        Intent it = new Intent(Registration.this, Login.class);
-                        startActivity(it);
                     }else {
                         ed_emailid.requestFocus();
                         ed_emailid.setError("Please enter a valid mail ID!");
@@ -187,5 +185,6 @@ public class Registration extends AppCompatActivity {
 
         }
     }
+
 }
 

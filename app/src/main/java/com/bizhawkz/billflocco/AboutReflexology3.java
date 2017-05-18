@@ -116,7 +116,7 @@ public class AboutReflexology3 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("THE AMERICAN ACADEMY OF REFLEXOLOGY IS THE FIRST SCHOOL TO");
+        toolbar.setTitle("The American Academy of Reflexology");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 

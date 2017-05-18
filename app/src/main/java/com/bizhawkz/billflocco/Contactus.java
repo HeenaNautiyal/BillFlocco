@@ -33,6 +33,14 @@ public class Contactus extends AppCompatActivity {
     ProgressDialog pb;
     ImageView tvpower;
     SessionManager1 session;
+    String Expn =
+            "^(([\\w-]+\\.)+[\\w-]+|([a-zA-Z]{1}|[\\w-]{2,}))@"
+                    + "((([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                    + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\."
+                    + "([0-1]?[0-9]{1,2}|25[0-5]|2[0-4][0-9])\\.([0-1]?"
+                    + "[0-9]{1,2}|25[0-5]|2[0-4][0-9])){1}|"
+                    + "([a-zA-Z]+[\\w-]+\\.)+[a-zA-Z]{2,4})$";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -103,7 +111,14 @@ public class Contactus extends AppCompatActivity {
                     builder.show();
                 }
                 else {
-                    new Contact().execute();
+                    if (ed_mal.matches(Expn) && ed_mal.length() > 0) {
+                        session.createLoginSession(ed_mal.replaceAll(" ", ""));
+                        //new Contact().execute();
+                    }else {
+                        mail.requestFocus();
+                        mail.setError("Please enter a valid mail ID!");
+                    }
+                 //
                 }
 
             }

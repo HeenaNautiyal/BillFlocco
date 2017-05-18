@@ -36,8 +36,8 @@ public class ReflexologyResource extends AppCompatActivity {
 
         webView.setWebViewClient(new MyWebViewClient());
         url = "http://www.americanacademyofreflexology.com/national-level-reflexology-organizations-in-the-usa/";
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.setWebViewClient(new WebViewClient() {
+            webView.getSettings().setJavaScriptEnabled(true);
+            webView.setWebViewClient(new WebViewClient() {
             @Override
             public void onPageFinished(WebView view, String url) {
                 webView.loadUrl("javascript:(function() { " +
@@ -112,7 +112,7 @@ public class ReflexologyResource extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Reflexology Research Studies Listed by Category");
+        toolbar.setTitle("National Level Reflexology Organization in the USA");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
@@ -121,7 +121,7 @@ public class ReflexologyResource extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent It = new Intent(ReflexologyResource.this, OptionScreen.class);
+                        Intent It = new Intent(ReflexologyResource.this, ResourceOption.class);
                         startActivity(It);
                     }
                 });

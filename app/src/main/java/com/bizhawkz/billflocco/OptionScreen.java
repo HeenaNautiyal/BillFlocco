@@ -178,4 +178,8 @@ public class OptionScreen extends AppCompatActivity implements ConnectivityRecei
     public void onNetworkConnectionChanged(boolean isConnected) {
         showSnack(isConnected);
     }
+
+    public void onBackPressed() {
+        moveTaskToBack(false);
+    }
 }

@@ -116,7 +116,7 @@ public class AboutReflexology6 extends AppCompatActivity {
 
     private void initToolBar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("DOCUMENTED HISTORY OF FOOT, HAND AND EAR REFLEXOLOGY");
+        toolbar.setTitle("Documented History of Foot,Hand and Ear Reflexology");
         toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
 
