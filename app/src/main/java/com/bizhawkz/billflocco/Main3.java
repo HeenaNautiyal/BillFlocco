@@ -60,29 +60,8 @@ public class Main3 extends AppCompatActivity {
             }
 
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(Main3.this);
-                TextView myMsg = new TextView(Main3.this);
-                myMsg.setText("Mobile Data is off");
-                myMsg.setGravity(Gravity.CENTER_HORIZONTAL);
-                myMsg.setTextSize(20);
-                myMsg.setTextColor(Color.BLACK);
-                builder.setCustomTitle(myMsg);
-                builder.setMessage("BOOKS CHARTS & HEALTH PRODUCTS");
-                builder.setPositiveButton("ok",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,
-                                                int which) {
-                                dialog.cancel();
-                            }
-                        });
-                builder.setNegativeButton("Setting", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,
-                                        int which) {
-                        startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
-                        dialog.cancel();
-                    }
-                });
-                builder.show();
+                Intent it = new Intent(Main3.this, Network.class);
+                startActivity(it);
             }
         });
         webView.loadUrl(url);

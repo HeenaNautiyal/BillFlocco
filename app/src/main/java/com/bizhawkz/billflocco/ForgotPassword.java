@@ -114,7 +114,7 @@ public class ForgotPassword extends AppCompatActivity {
                 JSONObject jsonResult = new JSONObject(result);
                 String message = jsonResult.getString("udata");
                 Log.d("Response: ", "> " + message);
-                if (message.equals("11")) {
+                if (message.equals("1")) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(ForgotPassword.this);
                     TextView myMsg = new TextView(ForgotPassword.this);
                     myMsg.setText("Thank You!");
@@ -122,7 +122,7 @@ public class ForgotPassword extends AppCompatActivity {
                     myMsg.setTextSize(20);
                     myMsg.setTextColor(Color.BLACK);
                     builder.setCustomTitle(myMsg);
-                    builder.setMessage("Your password has been sent to your registered mail Id.");
+                    builder.setMessage("Your password has been sent to your registered Email ID.");
                     builder.setPositiveButton("Continue",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog,

@@ -1,19 +1,16 @@
 package com.bizhawkz.billflocco;
 
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.TextView;
 
 public class AboutReflexology16 extends AppCompatActivity {
     Toolbar toolbar;
@@ -60,29 +57,8 @@ public class AboutReflexology16 extends AppCompatActivity {
             }
 
             public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(AboutReflexology16.this);
-                TextView myMsg = new TextView(AboutReflexology16.this);
-                myMsg.setText("Mobile Data is off");
-                myMsg.setGravity(Gravity.CENTER_HORIZONTAL);
-                myMsg.setTextSize(20);
-                myMsg.setTextColor(Color.BLACK);
-                builder.setCustomTitle(myMsg);
-                builder.setMessage("Turn on mobile data or use Wi-Fi to access data.");
-                builder.setPositiveButton("ok",
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog,
-                                                int which) {
-                                dialog.cancel();
-                            }
-                        });
-                builder.setNegativeButton("Setting", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,
-                                        int which) {
-                        startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
-                        dialog.cancel();
-                    }
-                });
-                builder.show();
+                Intent it = new Intent(AboutReflexology16.this, Network.class);
+                startActivity(it);
             }
         });
         webView.loadUrl(url);

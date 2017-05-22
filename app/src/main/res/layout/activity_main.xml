@@ -31,11 +31,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:id="@+id/btn_1"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
-                android:text="About the American Academyof reflexology"/>
+                android:text="About the American Academy of Reflexology"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,13 +47,15 @@
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
-                android:text="Meet out Instructors"/>
+                android:text="Meet Out Instructors"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
                 android:id="@+id/btn_3"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
@@ -62,35 +66,43 @@
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
                 android:id="@+id/btn_4"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
-                android:text="What is Reflexology?Defination of Reflexology"/>
+                android:text="What is Reflexology? Defination of Reflexology"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
                 android:id="@+id/btn_5"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
-                android:text="Benifits of Reflexology,Stories,Reflexology Studies"/>
+                android:text="Benefits of Reflexology,Stories,Reflexology Studies"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:id="@+id/btn_6"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
-                android:text="Documented History of Foot,hand and Ear Reflexology"/>
+                android:text="Documented History of Foot,Hand and Ear Reflexology"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:id="@+id/btn_7"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
@@ -104,12 +116,16 @@
                 android:id="@+id/btn_8"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:textAllCaps="false"
-                android:text="7 Principle of Integrating Foot hand Ear reflexology"/>
+                android:text="7 Principle of Integrating Foot Hand Ear Reflexology"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:textSize="16dp"
                 android:id="@+id/btn_9"
                 android:background="@drawable/buttonbackground"
@@ -121,6 +137,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:id="@+id/btn_10"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
@@ -132,6 +150,8 @@
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
                 android:id="@+id/btn_11"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
@@ -142,6 +162,8 @@
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
                 android:id="@+id/btn_12"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
@@ -154,6 +176,8 @@
                 android:id="@+id/btn_13"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:textAllCaps="false"
                 android:text="I Understand you can Diagnose with Reflxology"/>
             <Button
@@ -161,6 +185,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:id="@+id/btn_14"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
@@ -171,21 +197,25 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:id="@+id/btn_15"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
-                android:text="Reflexology as a career"/>
+                android:text="Reflexology as a Career"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textSize="16dp"
                 android:id="@+id/btn_16"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
                 android:background="@drawable/buttonbackground"
                 android:textColor="@color/White"
                 android:textAllCaps="false"
-                android:text="Reflexology continuing Education for many Professions"/>
+                android:text="Reflexology Continuing Education for many Professions"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
