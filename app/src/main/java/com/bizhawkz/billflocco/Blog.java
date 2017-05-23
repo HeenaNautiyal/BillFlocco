@@ -48,6 +48,13 @@ public class Blog extends AppCompatActivity {
                         "document.getElementsByClassName('tag_line_con')[0].style.display='none'; })()");
                 webView.loadUrl("javascript:(function() { " +
                         "document.getElementsByClassName('footer_mid_con')[0].style.display='none'; })()");
+                webView.loadUrl("javascript:document.getElementById(\"responsive-menu-item-28\").setAttribute(\"style\",\"display:none;\");");
+                webView.loadUrl("javascript:document.getElementById(\"responsive-menu-item-3861\").setAttribute(\"style\",\"display:none;\");");
+                webView.loadUrl("javascript:document.getElementById(\"responsive-menu-item-3734\").setAttribute(\"style\",\"display:none;\");");
+                webView.loadUrl("javascript:document.getElementById(\"responsive-menu-item-3495\").setAttribute(\"style\",\"display:none;\");");
+                webView.loadUrl("javascript:document.getElementById(\"responsive-menu-item-3465\").setAttribute(\"style\",\"display:none;\");");
+                webView.loadUrl("javascript:document.getElementById(\"responsive-menu-item-22\").setAttribute(\"style\",\"display:none;\");");
+
 
                 pb.dismiss();
                 mySwipeRefreshLayout.setRefreshing(false);
